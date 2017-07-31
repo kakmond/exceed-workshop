@@ -1,0 +1,468 @@
+<html>
+
+<head>
+    <title>PET 4.0</title>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="project.css">
+    <!-- JS -->
+    <script src="script.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+
+    <div class="container">
+        <section id="section03">
+
+
+            <center>
+                <div class="Head">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4">
+                            <div class="Cat">
+                                <img src="image/girl.png" alt="Cat">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-4">
+                            <div class="Fontcat">
+                                <img src="image/pet4.png" width="500px" alt="PetCat">
+                            </div>
+                        </div>
+                    </div>
+                    <center>
+
+                        <br /><br /><br /><br /><br /><br /><br /><br />
+                        <p style=margin-right:11% id="HELLO"> Hello !</center>
+                    </p>
+                </div>
+
+            </center>
+
+            <div class="container" style="text-align: center;">
+                <a href="#section04" style="text-align: center"><span></span></a>
+            </div>
+        </section>
+
+
+        <!-- icon1 -->
+        <section id="section04">
+
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <div class="Food">
+                        <button class="person center-block"><img src="image/dog-food.png" alt="food"></button>
+                        <center>
+                            <div class="caption">
+                                <h3>FOOD</h3>
+                                <!-- <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">off</a></p> -->
+                            </div>
+                        </center>
+                        <center>
+                            <div class="onoffswitch" id="people">
+                                <input type="checkbox" onclick="foodmethod()" name="onoffswitch" class="onoffswitch-checkbox hidden" id="myonoffswitchFOOD" checked>
+                                <label class="onoffswitch-label" for="myonoffswitchFOOD">
+                  <span class="onoffswitch-inner"></span>
+                  <span class="onoffswitch-switch"></span>
+                  </label>
+                  <h2>AUTO</h2>
+                  <img id="food" onclick="autoFOOD()" src="image/flash 2.png" style="width:50px">
+                            </div>
+                        </center>
+                        <ul class="list-person">
+                        <!--    <li class="list-group-item">
+                                <!-- เริ่ม -->
+                        <!--        <div id="myProgress">
+                                    <div id="myBarFOOD">0%</div>
+                                </div>
+                                <!-- จบ -->
+                            <!-- </li>
+                        </ul> -->
+                    </div>
+
+                </div>
+
+                <!-- icon1 -->
+
+                <!-- icon2 -->
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="Door">
+                        <button class="door center-block" id="door"><img src="image/doorway.png" alt="door"></button>
+                        <div class="caption">
+                            <h3>DOOR</h3>
+                            <!-- <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">off</a></p> -->
+                            <center>
+
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox hidden" onclick="doormethod()" id="myonoffswitchDOOR" checked>
+                                    <label class="onoffswitch-label" for="myonoffswitchDOOR">
+          <span class="onoffswitch-inner"></span>
+          <span class="onoffswitch-switch"></span>
+      </label>
+                                </div>
+                            </center>
+                            <center>
+
+
+                                <!-- <div class="onoffswitch">
+                                <input type="checkbox" onclick="automethod()" name="onoffswitch" class="onoffswitch-checkbox hidden" id="myonoffswitchAUTO" checked>
+                                <label class="onoffswitch-label" for="myonoffswitchAUTO">
+                                <span class="onoffswitch-inner"></span>
+                                <span class="onoffswitch-switch"></span>
+                            </label>
+                            </div> -->
+                            </center>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- icon2 -->
+
+
+                <!-- icon3 -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="Temperature">
+                        <button class="temperature center-block"><img src="image/thermometer.png" alt="Temperature."></button>
+                        <div class="caption">
+                            <h3>TEMPERATURE</h3>
+                            <!-- <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">off</a></p> -->
+                            <center>
+
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox hidden" id="myonoffswitchTEMPERATURE" onclick="tempmethod()" disable data-toggle="toggle" unchecked>
+                                    <label class="onoffswitch-label" for="myonoffswitchTEMPERATURE">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+                                </div>
+                            </center>
+
+                            <ul class="list-person">
+                                <li class="list-group-item">
+                                    <!-- เริ่ม -->
+                                    <div id="myProgress">
+                                        <div id="myBarTEMP">0%</div>
+                                    </div>
+                                    <!-- จบ -->
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- icon3 -->
+
+
+            <!-- icon5 -->
+            <!-- <div class="col-sm-6 col-md-4">
+            <div class="Sun">
+                <button class="sun center-block"><img src="image/contrast.png" alt="Sun"></button>
+                <div class="caption">
+                    <h3>SUN</h3>
+                    <center>
+
+                        <div class="onoffswitch">
+                            <input type="checkbox" name="onoffswitch" onclick="sunmethod()" class="onoffswitch-checkbox hidden" id="myonoffswitchSUN" checked>
+                            <label class="onoffswitch-label" for="myonoffswitchSUN">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+                        </div>
+                    </center>
+                </div>
+            </div>
+        </div> -->
+
+            <!-- icon5 -->
+
+            <!-- icon6 -->
+
+            <div class="col-sm-6 col-md-4">
+                <div class="Light">
+                    <button class="light center-block"><img src="image/light-bulb.png" alt="Light"></button>
+                    <div class="caption">
+                        <h3>LIGHT</h3>
+                        <!-- <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">off</a></p> -->
+                        <center>
+
+                            <div class="onoffswitch">
+                                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox hidden" onclick="lightmethod()" id="myonoffswitchLIGHT" checked>
+                                <label class="onoffswitch-label" for="myonoffswitchLIGHT">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+                            </div>
+                        </center>
+                        <!-- kong -->
+
+                        <h2>AUTO</h2>
+
+                        <!-- <div class="onoffswitch">
+                                <input type="checkbox" onclick="automethod()" name="onoffswitch" class="onoffswitch-checkbox hidden" id="myonoffswitchAUTO" checked>
+                                <label class="onoffswitch-label" for="myonoffswitchAUTO">
+                                <span class="onoffswitch-inner"></span>
+                                <span class="onoffswitch-switch"></span>
+                            </label>
+                            </div> -->
+
+                        <img id="autolight" onclick="autobuttonLIGHT()" src="image/flash 2.png" style="width:50px">
+
+                        <!-- kong -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- kong -->
+            <br />
+            <div class="col-sm-6 col-md-4">
+                <div class="play">
+                    <button class="play center-block"><img src="image/play.png" alt="play" style="width:110px"></button>
+                    <div class="caption">
+                        <center>
+                            <h3>PLAY</h3>
+                        </center>
+                        <!-- <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">off</a></p> -->
+                        <center>
+
+                            <div class="onoffswitch">
+                                <input type="checkbox" name="
+                                    onoffswitch" class="onoffswitch-checkbox hidden" onclick="playmethod()" id="myonoffswitchplay" checked>
+                                <label class="onoffswitch-label" for="myonoffswitchplay">
+                        <span class="onoffswitch-inner"></span>
+                        <span class="onoffswitch-switch"></span>
+                    </label>
+                            </div>
+                        </center>
+                        <!-- kong -->
+
+                        <h2>AUTO</h2>
+
+                        <!-- <div class="onoffswitch">
+                                        <input type="checkbox" onclick="automethod()" name="onoffswitch" class="onoffswitch-checkbox hidden" id="myonoffswitchAUTO" checked>
+                                        <label class="onoffswitch-label" for="myonoffswitchAUTO">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                    </div> -->
+
+                        <img id="toy" onclick="toyison()" src="image/flash 2.png" style="width:50px">
+
+                        <!-- kong -->
+                    </div>
+                </div>
+            </div>
+            <!-- kong -->
+
+            <div class="col-sm-6 col-md-4">
+                <div class="Air">
+                    <button class="air center-block"><img src="image/air.png" alt="AIR"></button>
+                    <div class="caption">
+                        <h3>AIR-CONDITIONER</h3>
+                        <!-- <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">off</a></p> -->
+                        <center>
+
+                            <div class="onoffswitch">
+                                <input type="checkbox" name="onoffswitch" onclick="airmethod()" class="onoffswitch-checkbox hidden" id="myonoffswitchAIR" checked>
+                                <label class="onoffswitch-label" for="myonoffswitchAIR">
+                    <span class="onoffswitch-inner"></span>
+                    <span class="onoffswitch-switch"></span>
+                </label>
+                            </div>
+                        </center>
+                        <!-- kong -->
+
+                        <h2>AUTO</h2>
+
+                        <!-- <div class="onoffswitch">
+                                <input type="checkbox" onclick="automethod()" name="onoffswitch" class="onoffswitch-checkbox hidden" id="myonoffswitchAUTO" checked>
+                                <label class="onoffswitch-label" for="myonoffswitchAUTO">
+                                <span class="onoffswitch-inner"></span>
+                                <span class="onoffswitch-switch"></span>
+                            </label>
+                            </div> -->
+
+                        <img id="air" onclick="airauto()" src="image/flash 2.png" style="width:50px">
+
+                        <!-- kong -->
+                    </div>
+                </div>
+            </div>
+
+
+    </div>
+    <br />
+
+
+
+    <!-- ดรอบ -->
+    <ul class="list-person">
+        <li class="list-group-item">
+            <span class="badge" id="n-person">0</span> <b>Amount of Cats in House</b>
+        </li>
+    </ul>
+
+    <div class="container">
+        <h2><font size="15"><b>Your Cats</b></font></h2>
+        <p><b><font color="#a6a6a6" size="4">    Add or see details of your cats.</font></b></p>
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo"><font size="4">Click Me :)</font></button>
+        <div id="demo" class="collapse">
+            <center style="margin-left:2%">
+
+
+                <center style="margin-left: 250px">
+                    <table class="table center">
+                        <thead>
+                            <tr bgcolor="#FDB35E">
+                                <th>
+                                    <center id="test">
+                                        Name
+                                    </center>
+                                </th>
+                                <th>
+                                    <center id="test">
+                                        Colour
+                                    </center>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="success" id="green">
+                            </tr>
+                            <tr class="info" id="blue">
+                            </tr>
+                            <tr class="warning" id="red">
+                            </tr>
+                        </tbody>
+                    </table>
+                </center>
+                </thead>
+                <tbody>
+
+                    <tr class="success" id="green">
+
+                    </tr>
+
+                    <tr class="info" id="blue">
+
+                    </tr>
+                    <tr class="warning" id="red">
+
+                    </tr>
+
+                </tbody>
+                </table>
+            </center>
+
+
+            <div class="container">
+                <div class="row clearfix">
+                    <div class="col-md-12 column">
+                        <table class="table table-bordered table-hover" id="tab_logic">
+                            <thead>
+                                <tr bgcolor="#ffb3cc">
+                                    <th class="text-center">
+                                        <center>Name </center>
+                                    </th>
+                                    <th class="text-center">
+                                        <center>
+                                            Colour </center>
+                                    </th>
+                                </tr>
+
+                            </thead>
+                            <tbody>
+                                <tr id='addr0' bgcolor="#ffe6f3">
+
+                                    <td>
+                                        <input type="text" id="namecat1" name='name0' placeholder='Name' class="form-control" />
+                                    </td>
+                                    <td bgcolor="#ffe6f3">
+
+                                        <select class="form-control" id="colourcat1">
+      <option value="one">red</option>
+      <option value="two">blue</option>
+      <option value="three">green</option>
+
+      </select>
+                                        <!-- <input type="text" id="colourcat1" name='mail0' placeholder='Colour' class="form-control" /> -->
+
+                                    </td>
+
+                                </tr>
+                                <tr id='addr1'></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- <input type="image" id="add_row" class="btn btn-default pull-left" width="60" height="45" src="image/plus.png" />
+          <input type="image" id='delete_row' class="pull-right btn btn-default" width="60" height="45" src="image/minus.png" /> -->
+                <button type="button" id='delete_row' class="btn btn-warning" onclick="clearButton()">Clear</button>
+                <button type="button" class="btn btn-primary" onclick="summit()">Submit</button>
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <h2><font size="30"><b>Log Cat</font></b></h2>
+        <p>
+            <font color="#a6a6a6" size="4"><b>Click on the button to see whom pass the door.</b></font>
+        </p>
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo2"><font size="4">Click here!</font></button>
+        <div id="demo2" class="collapse">
+            <br />
+            <br />
+            <table class="table table-bordered table-inverse">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Name</th>
+                        <th>
+                            Action
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="log">
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- icon6 -->
+
+    <br />
+    <br />
+    <br />
+</body>
+
+</html>
